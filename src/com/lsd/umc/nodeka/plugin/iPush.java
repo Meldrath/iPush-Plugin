@@ -46,7 +46,7 @@ public class iPush {
             argArray.add(m.group(1).replace("\"", ""));
         }
 
-        if (argArray.isEmpty() || argArray.size() > 5 || "".equals(argArray.get(0))) {
+        if (argArray.isEmpty() || argArray.size() > 4 || "".equals(argArray.get(0))) {
             script.capture(AnsiTable.getCode("light red") + "--------------------------------------------------------------------------\001");
             script.capture(AnsiTable.getCode("yellow") + "Syntax:\001");
             script.capture(AnsiTable.getCode("white") + " > #pushover " + AnsiTable.getCode("yellow") + "user" + AnsiTable.getCode("white") + " key\001");
